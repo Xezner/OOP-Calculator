@@ -1,2 +1,2 @@
 # OOP-Calculator
-Calculator for Object Orientec Programming
+Calculator for Object Oriented Programming
