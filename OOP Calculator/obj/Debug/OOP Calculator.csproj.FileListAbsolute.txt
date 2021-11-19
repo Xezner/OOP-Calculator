@@ -1,0 +1,13 @@
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\bin\Debug\OOP Calculator.exe.config
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\bin\Debug\OOP Calculator.exe
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\bin\Debug\OOP Calculator.pdb
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP Calculator.csprojAssemblyReference.cache
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP_Calculator.Form1.resources
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP_Calculator.Properties.Resources.resources
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP Calculator.csproj.GenerateResource.cache
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP Calculator.csproj.CoreCompileInputs.cache
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP Calculator.exe
+C:\Users\prenc\source\repos\OOP Calculator\OOP Calculator\obj\Debug\OOP Calculator.pdb
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP Calculator\obj\Debug\OOP Calculator.csprojAssemblyReference.cache
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP Calculator\obj\Debug\OOP Calculator.exe
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP Calculator\obj\Debug\OOP Calculator.pdb
