@@ -12,10 +12,12 @@ namespace OOP_Calculator_Remake
 {
     public partial class Form1 : Form
     {
-        string[] operations = { "" };
+        string[] operations = { "", "", "", "", "", "", "", "", "", "" };
         int number_Operations = 0;
         string current_Operation = "";
-        float num1, num2, result;
+        float num1, num2 = 0;
+        float result = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -38,7 +40,8 @@ namespace OOP_Calculator_Remake
 
         private void CE_Click(object sender, EventArgs e)
         {
-
+            num1 = num2 = result = 0;
+               
             textBox1.Text = "0";
             number_Operations = 0;
             current_Operation = null;
@@ -127,6 +130,10 @@ namespace OOP_Calculator_Remake
 
         private void six_Click(object sender, EventArgs e)
         {
+            if(result!= 0)
+            {
+
+            }
             if (textBox1.Text == "0" && textBox1.Text != null)
             {
                 textBox1.Text = "6";
@@ -222,10 +229,28 @@ namespace OOP_Calculator_Remake
         //addition operation
         private void add_Click(object sender, EventArgs e)
         {
+            if(num1 == 0)
+            {
+                num1 = float.Parse(textBox1.Text);
+            }
+            else
+            {
+                result = num1 + float.Parse(textBox1.Text);
+            }
 
-            operations[number_Operations] = "+";
-            number_Operations++;
-            current_Operation = "+";
+            if(result != 0)
+            {
+                textBox1.Text = result.ToString();
+            }
+            else
+            { 
+                textBox1.Text = " ";
+            }
+
+            
+
+
+
         }
 
         private void equals_Click(object sender, EventArgs e)
