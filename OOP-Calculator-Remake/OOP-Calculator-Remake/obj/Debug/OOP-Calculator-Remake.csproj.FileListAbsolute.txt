@@ -1,0 +1,10 @@
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\bin\Debug\OOP-Calculator-Remake.exe.config
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\bin\Debug\OOP-Calculator-Remake.exe
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\bin\Debug\OOP-Calculator-Remake.pdb
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP-Calculator-Remake.csprojAssemblyReference.cache
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP_Calculator_Remake.Form1.resources
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP_Calculator_Remake.Properties.Resources.resources
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP-Calculator-Remake.csproj.GenerateResource.cache
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP-Calculator-Remake.csproj.CoreCompileInputs.cache
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP-Calculator-Remake.exe
+C:\Users\prenc\Documents\GitHub\OOP-Calculator\OOP-Calculator-Remake\OOP-Calculator-Remake\obj\Debug\OOP-Calculator-Remake.pdb
