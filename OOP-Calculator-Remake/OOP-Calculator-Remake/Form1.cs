@@ -216,7 +216,7 @@ namespace OOP_Calculator_Remake
                 result = result * num1;
                 num1--;
             }
-            MessageBox.Show(result.ToString());
+            textBox1.Text = result.ToString();
         }
 
         //addition operation
