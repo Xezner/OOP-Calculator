@@ -294,7 +294,10 @@ namespace OOP_Calculator_Remake
 
         private void absX_Click(object sender, EventArgs e)
         {
-            //textBox1.Text;
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            ans = Math.Abs(ans);
+            textBox1.Text = (ans.ToString());
         }
 
         private void equals_Click(object sender, EventArgs e)
