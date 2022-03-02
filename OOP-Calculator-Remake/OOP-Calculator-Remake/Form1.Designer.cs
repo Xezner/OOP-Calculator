@@ -850,6 +850,7 @@ namespace OOP_Calculator_Remake
             this.minus.TabIndex = 33;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = false;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // six
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using org.mariuszgromada.math.mxparser;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -211,7 +212,10 @@ namespace OOP_Calculator_Remake
         //sign changing
         private void signChange_Click(object sender, EventArgs e)
         {
-            textBox1.Text = (float.Parse(textBox1.Text) * -1).ToString();
+            textBox1.Text = "(" + textBox1.Text + ")" + "* -1";
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
         }
 
         private void factorial_Click(object sender, EventArgs e)
@@ -229,33 +233,40 @@ namespace OOP_Calculator_Remake
         //addition operation
         private void add_Click(object sender, EventArgs e)
         {
-            if(num1 == 0)
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if (currentText != "+")
             {
-                num1 = float.Parse(textBox1.Text);
+                textBox1.Text += "+";
             }
             else
             {
-                result = num1 + float.Parse(textBox1.Text);
+                textBox1.Text = "Syntax Error";
             }
+        }
 
-            if(result != 0)
+        private void minus_Click(object sender, EventArgs e)
+        {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            string beforeCurrentText = (textBox1.Text).Substring(a - 1, 1);
+            if (currentText != "-" && beforeCurrentText != "-")
             {
-                textBox1.Text = result.ToString();
+                textBox1.Text += "-";
             }
             else
-            { 
-                textBox1.Text = " ";
+            {
+                textBox1.Text = "Syntax Error";
             }
-
-            
-
-
-
         }
 
         private void equals_Click(object sender, EventArgs e)
         {
-
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
         }
     }
 }
