@@ -470,6 +470,7 @@ namespace OOP_Calculator_Remake
             this.absX.TabIndex = 16;
             this.absX.Text = "| x |";
             this.absX.UseVisualStyleBackColor = false;
+            this.absX.Click += new System.EventHandler(this.absX_Click);
             // 
             // oneOverX
             // 
@@ -518,6 +519,7 @@ namespace OOP_Calculator_Remake
             this.multiply.TabIndex = 28;
             this.multiply.Text = "x";
             this.multiply.UseVisualStyleBackColor = false;
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
             // 
             // nine
             // 
@@ -601,6 +603,7 @@ namespace OOP_Calculator_Remake
             this.divide.TabIndex = 23;
             this.divide.Text = "÷";
             this.divide.UseVisualStyleBackColor = false;
+            this.divide.Click += new System.EventHandler(this.divide_Click);
             // 
             // factorial
             // 

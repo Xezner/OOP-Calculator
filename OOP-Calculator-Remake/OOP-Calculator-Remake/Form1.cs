@@ -262,6 +262,41 @@ namespace OOP_Calculator_Remake
             }
         }
 
+        private void multiply_Click(object sender, EventArgs e)
+        {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if (currentText != "*")
+            {
+                textBox1.Text += "*";
+            }
+            else
+            {
+                textBox1.Text = "Syntax Error";
+            }
+        }
+
+        private void divide_Click(object sender, EventArgs e)
+        {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if (currentText != "/")
+            {
+                textBox1.Text += "/";
+            }
+            else
+            {
+                textBox1.Text = "Syntax Error";
+            }
+        }
+
+        private void absX_Click(object sender, EventArgs e)
+        {
+            //textBox1.Text;
+        }
+
         private void equals_Click(object sender, EventArgs e)
         {
             Expression mathExpression = new Expression(textBox1.Text);
