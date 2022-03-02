@@ -438,6 +438,7 @@ namespace OOP_Calculator_Remake
             this.mod.TabIndex = 18;
             this.mod.Text = "mod";
             this.mod.UseVisualStyleBackColor = false;
+            this.mod.Click += new System.EventHandler(this.mod_Click);
             // 
             // exp
             // 

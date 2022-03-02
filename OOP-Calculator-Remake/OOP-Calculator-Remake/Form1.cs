@@ -236,7 +236,7 @@ namespace OOP_Calculator_Remake
             int a;
             a = textBox1.Text.Length - 1;
             string currentText = (textBox1.Text).Substring(a, 1);
-            if (currentText != "+")
+            if (currentText != "+" || currentText != "*" || currentText != "/" || currentText != "#")
             {
                 textBox1.Text += "+";
             }
@@ -252,7 +252,7 @@ namespace OOP_Calculator_Remake
             a = textBox1.Text.Length - 1;
             string currentText = (textBox1.Text).Substring(a, 1);
             string beforeCurrentText = (textBox1.Text).Substring(a - 1, 1);
-            if (currentText != "-" && beforeCurrentText != "-")
+            if (currentText != "-" && beforeCurrentText != "-" || currentText != "*" || currentText != "/" || currentText != "+" || currentText != "#")
             {
                 textBox1.Text += "-";
             }
@@ -267,7 +267,7 @@ namespace OOP_Calculator_Remake
             int a;
             a = textBox1.Text.Length - 1;
             string currentText = (textBox1.Text).Substring(a, 1);
-            if (currentText != "*")
+            if (currentText != "*" || currentText != "+" || currentText != "/" || currentText != "#")
             {
                 textBox1.Text += "*";
             }
@@ -282,7 +282,7 @@ namespace OOP_Calculator_Remake
             int a;
             a = textBox1.Text.Length - 1;
             string currentText = (textBox1.Text).Substring(a, 1);
-            if (currentText != "/")
+            if (currentText != "/" || currentText != "*" || currentText != "+" || currentText != "#")
             {
                 textBox1.Text += "/";
             }
@@ -298,6 +298,21 @@ namespace OOP_Calculator_Remake
             double ans = mathExpression.calculate();
             ans = Math.Abs(ans);
             textBox1.Text = (ans.ToString());
+        }
+
+        private void mod_Click(object sender, EventArgs e)
+        {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if (currentText != "#" || currentText != "*" || currentText != "/" || currentText != "+")
+            {
+                textBox1.Text += "#";
+            }
+            else
+            {
+                textBox1.Text = "Syntax Error";
+            }
         }
 
         private void equals_Click(object sender, EventArgs e)
