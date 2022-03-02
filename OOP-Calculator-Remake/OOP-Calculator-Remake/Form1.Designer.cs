@@ -455,6 +455,7 @@ namespace OOP_Calculator_Remake
             this.exp.TabIndex = 17;
             this.exp.Text = "exp";
             this.exp.UseVisualStyleBackColor = false;
+            this.exp.Click += new System.EventHandler(this.exp_Click);
             // 
             // absX
             // 
@@ -488,6 +489,7 @@ namespace OOP_Calculator_Remake
             this.oneOverX.TabIndex = 15;
             this.oneOverX.Text = "1/x";
             this.oneOverX.UseVisualStyleBackColor = false;
+            this.oneOverX.Click += new System.EventHandler(this.oneOverX_Click);
             // 
             // xSqrCube
             // 
@@ -504,6 +506,7 @@ namespace OOP_Calculator_Remake
             this.xSqrCube.TabIndex = 14;
             this.xSqrCube.Text = "x^2";
             this.xSqrCube.UseVisualStyleBackColor = false;
+            this.xSqrCube.Click += new System.EventHandler(this.xSqrCube_Click);
             // 
             // multiply
             // 
@@ -588,6 +591,7 @@ namespace OOP_Calculator_Remake
             this.xExpRootY.TabIndex = 24;
             this.xExpRootY.Text = "x^y";
             this.xExpRootY.UseVisualStyleBackColor = false;
+            this.xExpRootY.Click += new System.EventHandler(this.xExpRootY_Click);
             // 
             // divide
             // 
@@ -670,6 +674,7 @@ namespace OOP_Calculator_Remake
             this.xRoot.TabIndex = 19;
             this.xRoot.Text = "√x";
             this.xRoot.UseVisualStyleBackColor = false;
+            this.xRoot.Click += new System.EventHandler(this.xRoot_Click);
             // 
             // equals
             // 

@@ -315,6 +315,50 @@ namespace OOP_Calculator_Remake
             }
         }
 
+        private void exp_Click(object sender, EventArgs e)
+        {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if (currentText != "#" || currentText != "*" || currentText != "/" || currentText != "+")
+            {
+                textBox1.Text = textBox1.Text + "*10^";
+            }
+            else
+            {
+                textBox1.Text = "Syntax Error";
+            }
+        }
+
+        private void oneOverX_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "1/" + textBox1.Text;
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
+        }
+
+        private void xSqrCube_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "^2";
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
+        }
+
+        private void xRoot_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "sqrt(" + textBox1.Text + ")";
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
+        }
+
+        private void xExpRootY_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "(" + textBox1.Text + ")^";
+        }
+
         private void equals_Click(object sender, EventArgs e)
         {
             Expression mathExpression = new Expression(textBox1.Text);
