@@ -20,6 +20,7 @@ namespace OOP_Calculator_Remake
         float result = 0;
         int openCounter = 0;
         int closeCounter = 0;
+        string memoryStored = "0";
         public Form1()
         {
             InitializeComponent();
@@ -434,6 +435,37 @@ namespace OOP_Calculator_Remake
         private void natLog_Click(object sender, EventArgs e)
         {
             textBox1.Text = "ln(" + textBox1.Text + ")";
+        }
+
+        private void MS_Click(object sender, EventArgs e)
+        {
+            memoryStored = textBox1.Text;
+        }
+
+        private void MC_Click(object sender, EventArgs e)
+        {
+            memoryStored = "0";
+        }
+
+        private void MR_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = memoryStored;
+        }
+
+        private void mPlus_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "+" + memoryStored;
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
+        }
+
+        private void mMinus_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "-" + memoryStored;
+            Expression mathExpression = new Expression(textBox1.Text);
+            double ans = mathExpression.calculate();
+            textBox1.Text = (ans.ToString());
         }
 
         private void equals_Click(object sender, EventArgs e)

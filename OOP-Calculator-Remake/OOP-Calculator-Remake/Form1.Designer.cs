@@ -150,6 +150,7 @@ namespace OOP_Calculator_Remake
             this.MC.TabIndex = 3;
             this.MC.Text = "MC";
             this.MC.UseVisualStyleBackColor = false;
+            this.MC.Click += new System.EventHandler(this.MC_Click);
             // 
             // MR
             // 
@@ -165,6 +166,7 @@ namespace OOP_Calculator_Remake
             this.MR.TabIndex = 4;
             this.MR.Text = "MR";
             this.MR.UseVisualStyleBackColor = false;
+            this.MR.Click += new System.EventHandler(this.MR_Click);
             // 
             // mPlus
             // 
@@ -180,6 +182,7 @@ namespace OOP_Calculator_Remake
             this.mPlus.TabIndex = 5;
             this.mPlus.Text = "M+";
             this.mPlus.UseVisualStyleBackColor = false;
+            this.mPlus.Click += new System.EventHandler(this.mPlus_Click);
             // 
             // mMinus
             // 
@@ -195,6 +198,7 @@ namespace OOP_Calculator_Remake
             this.mMinus.TabIndex = 6;
             this.mMinus.Text = "M-";
             this.mMinus.UseVisualStyleBackColor = false;
+            this.mMinus.Click += new System.EventHandler(this.mMinus_Click);
             // 
             // MS
             // 
@@ -210,6 +214,7 @@ namespace OOP_Calculator_Remake
             this.MS.TabIndex = 7;
             this.MS.Text = "MS";
             this.MS.UseVisualStyleBackColor = false;
+            this.MS.Click += new System.EventHandler(this.MS_Click);
             // 
             // menu
             // 
