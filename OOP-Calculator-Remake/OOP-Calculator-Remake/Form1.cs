@@ -18,7 +18,8 @@ namespace OOP_Calculator_Remake
         string current_Operation = "";
         float num1, num2 = 0;
         float result = 0;
-
+        int openCounter = 0;
+        int closeCounter = 0;
         public Form1()
         {
             InitializeComponent();
@@ -220,6 +221,10 @@ namespace OOP_Calculator_Remake
 
         private void factorial_Click(object sender, EventArgs e)
         {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if ((currentText != "*") || (currentText != "/") || (currentText != "+") || (currentText != "#") || (currentText != "-") || (currentText != "(") || (currentText != ")"))
             num1 = int.Parse(textBox1.Text);
             result = 1;
             while(num1>0)
@@ -398,8 +403,51 @@ namespace OOP_Calculator_Remake
             textBox1.Text = "10^(" + textBox1.Text + ")";
         }
 
+        private void openP_Click(object sender, EventArgs e)
+        {
+            if(textBox1.Text == "0")
+            {
+                textBox1.Text = "(";
+            }
+            else textBox1.Text += "(";
+            openCounter++;
+        }
+
+        private void closeP_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("open" +openCounter.ToString());
+            MessageBox.Show("close" + closeCounter.ToString());
+            if(openCounter > closeCounter)
+            {
+                textBox1.Text += ")";
+                closeCounter++;
+            }
+            
+            
+        }
+
+        private void log_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "log10(" + textBox1.Text + ")";
+        }
+
+        private void natLog_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "ln(" + textBox1.Text + ")";
+        }
+
         private void equals_Click(object sender, EventArgs e)
         {
+            string str = textBox1.Text;
+            char openP = '(';
+            char closeP = ')';
+
+            int freqOpen = str.Count(f => (f == openP));
+            int freqClose = str.Count(f => (f == closeP));
+            for (int i = freqOpen - freqClose; i > 0; i--)
+            {
+                textBox1.Text += ")";
+            }
             Expression mathExpression = new Expression(textBox1.Text);
             double ans = mathExpression.calculate();
             textBox1.Text = (ans.ToString());

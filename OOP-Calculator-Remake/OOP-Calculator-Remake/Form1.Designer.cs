@@ -643,6 +643,7 @@ namespace OOP_Calculator_Remake
             this.closeP.TabIndex = 21;
             this.closeP.Text = ")";
             this.closeP.UseVisualStyleBackColor = false;
+            this.closeP.Click += new System.EventHandler(this.closeP_Click);
             // 
             // openP
             // 
@@ -659,6 +660,7 @@ namespace OOP_Calculator_Remake
             this.openP.TabIndex = 20;
             this.openP.Text = "(";
             this.openP.UseVisualStyleBackColor = false;
+            this.openP.Click += new System.EventHandler(this.openP_Click);
             // 
             // xRoot
             // 
@@ -760,6 +762,7 @@ namespace OOP_Calculator_Remake
             this.natLog.TabIndex = 39;
             this.natLog.Text = "ln";
             this.natLog.UseVisualStyleBackColor = false;
+            this.natLog.Click += new System.EventHandler(this.natLog_Click);
             // 
             // add
             // 
@@ -844,6 +847,7 @@ namespace OOP_Calculator_Remake
             this.log.TabIndex = 34;
             this.log.Text = "log";
             this.log.UseVisualStyleBackColor = false;
+            this.log.Click += new System.EventHandler(this.log_Click);
             // 
             // minus
             // 
