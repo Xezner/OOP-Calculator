@@ -372,6 +372,7 @@ namespace OOP_Calculator_Remake
             this.pi.TabIndex = 10;
             this.pi.Text = "π";
             this.pi.UseVisualStyleBackColor = false;
+            this.pi.Click += new System.EventHandler(this.pi_Click);
             // 
             // CE
             // 
@@ -927,6 +928,7 @@ namespace OOP_Calculator_Remake
             this.xExp.TabIndex = 29;
             this.xExp.Text = "10^x";
             this.xExp.UseVisualStyleBackColor = false;
+            this.xExp.Click += new System.EventHandler(this.xExp_Click);
             // 
             // Form1
             // 

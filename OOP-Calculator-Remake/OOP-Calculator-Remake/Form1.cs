@@ -251,14 +251,29 @@ namespace OOP_Calculator_Remake
             int a;
             a = textBox1.Text.Length - 1;
             string currentText = (textBox1.Text).Substring(a, 1);
-            string beforeCurrentText = (textBox1.Text).Substring(a - 1, 1);
-            if (currentText != "-" && beforeCurrentText != "-" || currentText != "*" || currentText != "/" || currentText != "+" || currentText != "#")
+            if(currentText == "0")
             {
-                textBox1.Text += "-";
+                textBox1.Text = "-";
             }
-            else
+            if (currentText != "0")
             {
-                textBox1.Text = "Syntax Error";
+                if (a == 0)
+                {
+                    a++;
+                }
+                string beforeCurrentText = (textBox1.Text).Substring(a - 1, 1);
+                if ((currentText == "-") && (beforeCurrentText == "-"))
+                {
+                    textBox1.Text = "Syntax Error";
+                }
+                else if (  (currentText != "*") || (currentText != "/") || (currentText != "+") || (currentText != "#") )
+                {
+                    textBox1.Text += "-";
+                }
+                else
+                {
+                    textBox1.Text = "Syntax Error";
+                }
             }
         }
 
@@ -357,6 +372,30 @@ namespace OOP_Calculator_Remake
         private void xExpRootY_Click(object sender, EventArgs e)
         {
             textBox1.Text = "(" + textBox1.Text + ")^";
+        }
+
+        private void pi_Click(object sender, EventArgs e)
+        {
+            int a;
+            a = textBox1.Text.Length - 1;
+            string currentText = (textBox1.Text).Substring(a, 1);
+            if ((currentText == "*" || currentText == "/" || currentText == "+") && (a!=0))
+            {
+                textBox1.Text = textBox1.Text + "3.14159265358979";
+            }
+            else if (currentText == "0")
+            {
+                textBox1.Text = "3.14159265358979";
+            }
+            else
+            {
+                textBox1.Text += "3.14159265358979";
+            }
+        }
+
+        private void xExp_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "10^(" + textBox1.Text + ")";
         }
 
         private void equals_Click(object sender, EventArgs e)
